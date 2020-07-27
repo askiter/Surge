@@ -1,0 +1,6 @@
+#!name=规则调整 By MrLiu
+#!desc=该模块适用于本人使用。
+#!system=ios
+
+[Rule]
+URL-REGEX,^https?+:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}, Direct
