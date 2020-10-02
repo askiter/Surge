@@ -2,5 +2,21 @@
 #!desc=该模块适用于本人使用。
 #!system=ios
 
+# 规则调整 By MrLiu
+# 更新时间 2020-10-02 12:45
+# GitHub主页(https://github.com/askiter/Surge)
+
 [Rule]
+# Apple
+DOMAIN,ocsp.apple.com,Direct
+
+# Keep
 URL-REGEX,^https?+:\/\/static1\.keepcdn\.com\/.+?\d{3}x\d{4}, Direct
+
+# JD
+DOMAIN,dns.jd.com, Direct
+IP-CIDR,101.124.19.122/32,Direct,no-resolve
+
+# 12306
+DOMAIN,ad.12306.cn,Direct
+DOMAIN,mobile.12306.cn,Direct

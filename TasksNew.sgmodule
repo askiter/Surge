@@ -1,12 +1,10 @@
-#!name=脚本配置 by MrLiu
+#!name=任务配置 by MrLiu
 #!desc=该模块适用于本人使用。
 #!system=ios
 
-# 脚本配置 By MrLiu
-# 更新时间 2020-10-02 12:32
-# GitHub主页(https://github.com/nzw9314)
-# TG通知频道 (https://t.me/nzw9314News)
-
+# 任务配置 By MrLiu
+# 更新时间 2020-10-02 12:45
+# GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
 # 网易严选
