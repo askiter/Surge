@@ -1,9 +1,9 @@
-#!name=任务配置 by MrLiu
+#!name=MyTasks by MrLiu
 #!desc=该模块适用于本人使用。
 #!system=ios
 
-# 任务配置 By MrLiu
-# 更新时间 2020-10-02 12:45
+# 任务配置
+# 更新时间 2020-10-04 10:52
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
@@ -82,8 +82,8 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 宠汪汪喂食= type=cron,cronexp=30 * * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js,wake-system=1
 宠汪汪偷好友积分与狗粮= type=cron,cronexp=0 0,6 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js,wake-system=1
 宠汪汪邀请助力与赛跑助力 = type=cron,cronexp="15 10 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
- 宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/user\/addUser\?code=\w+&, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
- 宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
+宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/user\/addUser\?code=\w+&, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
+宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
 
 # > 京东种豆得豆 (By uniqueque、lxk0301 & iepngs)
 # 京东App - 右下角"我的"- 游戏与互动-种豆得豆
@@ -171,5 +171,5 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 # 2.阅读一篇文章，获取阅读请求body，
 # 3.在阅读文章最下面有个惊喜红包，点击获取惊喜红包请求
 # 4.激励视频获取方法: 关闭vpn，进入任务中心=>抽奖赚点击下面第一个宝箱，出现视频广告页面，然后打开vpn，等待视频播放完毕，点击点我继续领青豆，再重复一次上面操作，获取激励视频请求的body
-中青看点极速版 = type=cron,cronexp=35 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
+中青看点极速版 = type=cron,cronexp=24 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
  
