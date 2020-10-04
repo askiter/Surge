@@ -1,9 +1,8 @@
-#!name=MyTasks by MrLiu
-#!desc=该模块适用于本人使用。
+#!name=任务配置 by MrLiu
+#!desc=该模块用于添加本人使用的脚本任务。
 #!system=ios
 
-# 任务配置
-# 更新时间 2020-10-04 10:52
+# 更新时间 2020-10-04 11:05
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
