@@ -1,8 +1,7 @@
 #!name=获取Cookies by MrLiu
-#!desc=该模块用于获取Cookie信息，仅在需要的时候启用。
+#!desc=该模块用于获取Cookie信息，仅在需要的时候启用。最后更新时间：2020-10-05 12:13
 #!system=ios
 
-# 更新时间 2020-10-04 10:35
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]

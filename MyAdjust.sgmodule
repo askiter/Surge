@@ -1,8 +1,7 @@
 #!name=规则调整 By MrLiu
-#!desc=该模块是根据本人的需要，对一些远程引用的规则进行调整。
+#!desc=该模块是根据本人的需要，对一些远程引用的规则进行调整。最后更新时间：2020-10-05 12:13
 #!system=ios
 
-# 更新时间 2020-10-04 11:00
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Rule]
