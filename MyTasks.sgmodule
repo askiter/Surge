@@ -1,5 +1,5 @@
 #!name=任务配置 by MrLiu
-#!desc=本模块用于添加脚本任务。最后更新时间：2020-10-10 12:05
+#!desc=本模块用于添加脚本任务。最后更新时间：2020-10-13 10:15
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -103,6 +103,14 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 # > 京东加速 (By lxk0301)
 # 京东App - 右下角"我的"- 游戏与互动-天天加速
 天天加速=type=cron,cronexp=8 */3 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js
+
+# > 京东全民开红包
+# 京东app->主页->领券->抢红包(在底部)
+京东全民开红包 = type=cron,cronexp=1 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_redPacket.js
+
+# > 摇京豆
+# 京东APP首页-领京豆-摇京豆
+摇京豆 = type=cron,cronexp="5 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_club_lottery.js
 
 # > 京东手机狂欢城 (By lxk0301)
 # 京东手机狂欢城1=type=cron,cronexp=1 0-18/6 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
