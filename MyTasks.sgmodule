@@ -47,7 +47,7 @@ AcFun = type=cron,cronexp=25 0 0 * * *,script-path=https://raw.githubusercontent
 # 1.打开腾讯新闻app，阅读几篇文章，倒计时结束后即可获取阅读Cookie;
 # 2.看一次推荐视频获取视频地址
 # 3.可能腾讯有某些限制，有些号码无法领取红包，手动阅读几篇，能领取红包，一般情况下都是正常的，
-腾讯新闻 = type=cron,cronexp=35 14 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
+# 腾讯新闻 = type=cron,cronexp=35 14 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
 
 # V2EX
 # 浏览器打开https://www.v2ex.com/mission/daily ，待弹出获取成功即可
