@@ -1,5 +1,5 @@
 #!name=任务配置 by MrLiu
-#!desc=本模块用于添加脚本任务。最后更新时间：2020-10-22 10:51
+#!desc=本模块用于添加脚本任务。最后更新时间：2020-10-22 11:38
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -157,8 +157,7 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 # > 微博超话 (By Evilbutcher & toulanboy)
 # 1.打开微博APP，"我的"， "超话社区"， "底部栏--我的"， "关注"， 弹出通知，提示获取已关注超话链接成功。
 # 2. 点进一个超话页面，手动签到一次。弹出通知，提示获取超话签到链接成功。 若之前所有已经签到，关注一个新超话进行签到。
-微博超话cookie获取 = type=http-request,pattern=^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button),script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.cookie.js,requires-body=false
-微博超话 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/toulanboy/scripts/master/weibo/weibotalk.js,wake-system=true,timeout=600
+微博超话 = type=cron,cronexp=5 0 * * *,script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/weibo/weibotalk.js,wake-system=true,timeout=600
 
 # 顺丰速运
 # 打开 APP, 访问下`我的顺丰` > `去签到` (访问下`去签到`的页面即可, 不用点`签到`)
