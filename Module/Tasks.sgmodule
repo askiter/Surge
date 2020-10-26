@@ -1,5 +1,5 @@
-#!name=任务配置 by MrLiu
-#!desc=本模块用于添加脚本任务。最后更新时间：2020-10-22 14:10
+#!name=其他任务 by MrLiu
+#!desc=其他脚本任务。最后更新时间：2020-10-26 17:10
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -65,80 +65,6 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 # 1打开 APP , 进入签到页面, 系统提示: `获取刷新链接: 成功`,然后手动签到 1 次
 # 2首页>天天抽奖, 系统提示 `2` 次: `获·取Cookie: 成功 (登录抽奖)` 和 `获取Cookie: 成功 (抽奖次数)`
 中国联通 = type=cron,cronexp=20 2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js,script-update-interval=0
-
-# > 京东
-# 打开浏览器访问: https://bean.m.jd.com
-京东签到1 = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
-京东签到4 = type=cron,cronexp=4 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
-
-# > 京东农场 (By liuxiaoyucc、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动- 东东农场
-京东农场= type=cron,cronexp=8 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js
-
-# > 京东萌宠 (By liuxiaoyucc、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动-东东萌宠
-京东萌宠= type=cron,cronexp=8 0 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_pet.js,wake-system=1
-
-# > 京东宠汪汪 (By uniqueque、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动-宠汪汪
-京东宠汪汪= type=cron,cronexp=2 * * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js,wake-system=1
-宠汪汪积分兑换奖品= type=cron,cronexp=0 0 0-16/8 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_reward.js,wake-system=1
-宠汪汪喂食= type=cron,cronexp=30 * * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js,wake-system=1
-宠汪汪偷好友积分与狗粮= type=cron,cronexp=0 0,6 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js,wake-system=1
-宠汪汪邀请助力与赛跑助力 = type=cron,cronexp="15 10 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
-宠汪汪强制为别人助力= type=http-request,pattern=(^https:\/\/draw\.jdfcloud\.com\/\/pet\/enterRoom\/h5\?reqSource=weapp&invitePin=.*+(&inviteSource=task_invite&shareSource=\w+&inviteTimeStamp=\d+&openId=\w+)?|^https:\/\/draw\.jdfcloud\.com\/\/pet\/helpFriend\?friendPin),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_help.js
-宠汪汪助力更新Token = type=http-response,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/user\/addUser\?code=\w+&, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
-宠汪汪助力获取Token = type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_run.js
-
-# > 京东种豆得豆 (By uniqueque、lxk0301 & iepngs)
-# 京东App - 右下角"我的"- 游戏与互动-种豆得豆
-京东种豆得豆= type=cron,cronexp=8 6-22/2 * * *,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_plantBean.js,wake-system=1
-
-#> 京东进店领豆(By lxk0301)
-进店领豆=type=cron,cronexp=10 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_shop.js
-
-# > 京东摇钱树 (By lxk0301)
-# 京东App - 右下角"我的"- 游戏与互动-摇钱树
-京东摇钱树=type=cron,cronexp=7 */6 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_moneyTree.js,wake-system=1
-
-# > 京东加速 (By lxk0301)
-# 京东App - 右下角"我的"- 游戏与互动-天天加速
-天天加速=type=cron,cronexp=8 */3 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_speed.js
-
-# > 京东全民开红包
-# 京东app->主页->领券->抢红包(在底部)
-京东全民开红包 = type=cron,cronexp=1 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_redPacket.js
-
-# > 摇京豆
-# 京东APP首页-领京豆-摇京豆
-摇京豆 = type=cron,cronexp="5 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_club_lottery.js
-
-# > 京东手机狂欢城 (By lxk0301)
-京东手机狂欢城1=type=cron,cronexp=1 0-18/6 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
-京东手机狂欢城2=type=cron,cronexp=10 0-18/6 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_818.js
-
-# > 京东星推官
-京东星推官1=type=cron,cronexp=3 0 * * *,wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_xtg.js
-京东星推官2=type=cron,cronexp=8 0 * * *,wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_xtg.js
-
-# > 取关京东店铺商品 (By lxk0301)
-# 取关京东店铺商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_unsubscribe.js
-
-# > 京小超(By lxk0301)
-# 京东App - 右下角"我的"- 游戏与互动-京小超
-京小超签到任务=type=cron,cronexp=11 1-23/5 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js
-京小超收取蓝币=type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js
-
-# 京东白条券
-京东白条券=type=cron,cronexp="0 9 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js, tag=京东白条
-
-# > 京东到家 (@barrymchen, @GideonSenku & @Macsuny)
-# APP登陆账号后，点击主页’签到‘,即可
-京东到家 = type=cron,cronexp=25 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
-
-# > 微信小程序-来客有礼 (By @Macsuny)
-# 微信搜索’来客有礼‘小程序,登陆京东账号，点击’领京豆->翻牌‘
-来客有礼 = type=cron,cronexp=30 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
 
 # > 京东成长分 (By @barrymchen)
 # 打开京东金融app，“信用”-》“小白成长分”
