@@ -1,5 +1,5 @@
 #!name=京东日常 by lxk0301
-#!desc=京东日常 任务定时配置。最后更新时间：2020-10-26 17:10
+#!desc=京东日常 任务定时配置。最后更新时间：2020-10-26 20:44
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -38,11 +38,6 @@
 
 # > 取关京东店铺商品 (By lxk0301)
 # 取关京东店铺商品 = type=cron,cronexp=55 23 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_unsubscribe.js
-
-# > 京小超(By lxk0301)
-# 京东App - 右下角"我的"- 游戏与互动-京小超
-京小超签到任务=type=cron,cronexp=11 1-23/5 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js
-京小超收取蓝币=type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js
 
 # > 京东宠汪汪 (By uniqueque、lxk0301 & iepngs)
 # 京东App - 右下角"我的"- 游戏与互动-宠汪汪
