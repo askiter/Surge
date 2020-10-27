@@ -1,4 +1,4 @@
-#!name=Script Base
+#!name=Askiter iOS Script Module
 #!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关，如果是YouTube会员，请添加-*.googlevideo.com到hostname，否则无法加载视频。最后更新时间：2020-10-27 23:45
 #!system=ios
 
