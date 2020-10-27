@@ -1,16 +1,10 @@
-#!name=Task Base by MrLiu
+#!name=Task Module by Askiter
 #!desc=其他脚本任务。最后更新时间：2020-10-27 20:51
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
-# 彩云天气 (By Peng-YM)
-# 打开手机设置 > 隐私 > 定位服务
-# (1) 打开定位服务
-# (2) 选择天气，设置永远允许天气访问位置信息，并允许使用精确位置。
-# (3) 打开box.js设置API token即可。
-# 彩云天气 = type=cron,cronexp=0 0-21/3 * * *,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
 
 # 美团外卖
 # 打开 APP , 进入签到页面, 系统提示: `获取刷新链接: 成功`,然后手动签到 1 次
