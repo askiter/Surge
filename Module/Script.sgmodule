@@ -1,5 +1,5 @@
 #!name=Askiter Script Module for iOS
-#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2020-10-28 22:46
+#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2020-10-28 22:58
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -56,7 +56,6 @@ http-response ^https:\/\/hkj178.com/wp-json/mp/v2/posts/* requires-body=1,script
 http-response ^https:\/\/a.jxjt888.top/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js,tag=天泽后花园
 http-response ^https:\/\/lysl2020.com/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js, tag=小野分享
 http-response ^https:\/\/www.i3zh.com/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js, tag=搜罗好货
-# http-response ^https:\/\/api\.gotokeep\.com\/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/keep.js, tag=Keep
 
 #  Co2333
 http-response ^https://mb3admin.com/admin/service/registration/validateDevice requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-vD.js, tag=embyUnlocked
@@ -88,5 +87,8 @@ http-response ^https:\/\/viva\.v21xy\.com\/api\/rest\/u\/vip requires-body=1,scr
 http-response ^https?:\/\/api.bjxkhc.com\/index\.php\/app\/ios\/(vod\/show|(user|vod|topic|type)\/index) requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/aimeiju.js, tag=爱美剧
 http-response ^https?:\/\/api\.vnision\.com\/v1\/(users\/|banners) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/dapian.js, tag=大片-视频编辑器
 
+# photonmang
+http-response ^https://api.gotokeep.com/(.+/subject|.+/dynamic|.+/coursePlus/.+|.+/status|.+/tab|.+/my|.+/start|.+/join|.+/complete|.+/detail/.+|.+/preview|.+/auth|.+/tab|.+/days) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/photonmang/quantumultX/master/keep.js, tag=Keep
+
 [MITM]
-hostname = %APPEND% tncj.hortorgames.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com,duoting.tatatimes.com, cm.szsszykj.com, avoscloud.com, api.flexibits.com, d.syshhc.top, 115.28.168.103, dbapi.ganbuguo.com,api.591master.com, www.mindmeister.com, sports.lifesense.com, api.pushover.net, subs.platforms.team, api.hulusaas.com, snailsleep.net,music.snailsleep.net,community.snailsleep.net, api.jiaonizuocai.com, nmeditation.snailsleep.net, claritywallpaper.com, subscription-service.neuralprisma.com, mappsv5.caixin.com, diary.7english.cn, buy.itunes.apple.com, api.gotokeep.com, *.ddly666.top, hkj178.com, a.jxjt888.top, lysl2020.com, www.i3zh.com,mb3admin.com,buy.itunes.apple.com,api2.mubu.com,mp.weixin.qq.com,r.inews.qq.com,m.client.10010.com,api.revenuecat.com,vip1.kuwo.cn,api.gamer.com.tw,ap*.intsig.net,newdrugs.dxy.cn,account.wps.cn,viva.v21xy.com,api.bjxkhc.com,api.vnision.com,api.bilibili.com
+hostname = %APPEND% tncj.hortorgames.com,api.weibo.cn,mapi.weibo.com,*.uve.weibo.com,trade-acs.m.taobao.com,ios.prod.ftl.netflix.com,duoting.tatatimes.com, cm.szsszykj.com, avoscloud.com, api.flexibits.com, d.syshhc.top, 115.28.168.103, dbapi.ganbuguo.com,api.591master.com, www.mindmeister.com, sports.lifesense.com, api.pushover.net, subs.platforms.team, api.hulusaas.com, snailsleep.net,music.snailsleep.net,community.snailsleep.net, api.jiaonizuocai.com, nmeditation.snailsleep.net, claritywallpaper.com, subscription-service.neuralprisma.com, mappsv5.caixin.com, diary.7english.cn, buy.itunes.apple.com, *.ddly666.top, hkj178.com, a.jxjt888.top, lysl2020.com, www.i3zh.com,mb3admin.com,buy.itunes.apple.com,api2.mubu.com,mp.weixin.qq.com,r.inews.qq.com,m.client.10010.com,api.revenuecat.com,vip1.kuwo.cn,api.gamer.com.tw,ap*.intsig.net,newdrugs.dxy.cn,account.wps.cn,viva.v21xy.com,api.bjxkhc.com,api.vnision.com,api.bilibili.com, api.gotokeep.com, 59.110.149.231, 129.211.156.213
