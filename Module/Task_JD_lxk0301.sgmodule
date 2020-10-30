@@ -1,13 +1,10 @@
 #!name=Task 京东日常 by lxk0301
-#!desc=京东日常 任务定时配置。最后更新时间：2020-10-29 18:02
+#!desc=京东日常 任务定时配置。最后更新时间：2020-10-30 14:38
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
-# 京豆变动通知
-京豆变动通知 = type=cron,cronexp=2 8 * * *,wake-system=1,timeout=440,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_bean_change.js
-
 # > 京东农场 (By liuxiaoyucc、lxk0301 & iepngs)
 # 京东App - 右下角"我的"- 游戏与互动- 东东农场
 京东农场= type=cron,cronexp=8 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js
@@ -45,17 +42,10 @@
 # > 京东宠汪汪 (By uniqueque、lxk0301 & iepngs)
 # 京东App - 右下角"我的"- 游戏与互动-宠汪汪
 京东宠汪汪= type=cron,cronexp=2 * * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy.js,wake-system=1
-宠汪汪积分兑换奖品= type=cron,cronexp=0 0 0-16/8 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_reward.js,wake-system=1
+宠汪汪积分兑换奖品 = type=cron,cronexp=0 0 0-16/8 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_reward.js,wake-system=1
 宠汪汪喂食= type=cron,cronexp=30 * * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_feedPets.js,wake-system=1
 宠汪汪偷好友积分与狗粮= type=cron,cronexp=0 0,6 * * *,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_joy_steal.js,wake-system=1
 
-# 京东白条券
-京东白条券=type=cron,cronexp="0 9 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js, tag=京东白条
+# > 京东全民营业领金币
+京东全民营业领金币 = type=cron,cronexp=17 * * * *, script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_collectProduceScore.js,wake-system=1
 
-# > 京东到家 (@barrymchen, @GideonSenku & @Macsuny)
-# APP登陆账号后，点击主页’签到‘,即可
-京东到家 = type=cron,cronexp=25 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
-
-# > 微信小程序-来客有礼 (By @Macsuny)
-# 微信搜索’来客有礼‘小程序,登陆京东账号，点击’领京豆->翻牌‘
-来客有礼 = type=cron,cronexp=30 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0

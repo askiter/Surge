@@ -1,13 +1,10 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-10-29 23:04
+#!desc=其他脚本任务。最后更新时间：2020-10-30 14:25
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
-# 京豆变动通知
-京豆变动通知 = type=cron,cronexp=7 5 * * *,wake-system=1,timeout=600,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_bean_change.js
-
 # 美团外卖
 # 打开 APP , 进入签到页面, 系统提示: `获取刷新链接: 成功`,然后手动签到 1 次
 美团外卖 = type=cron,cronexp=35 2 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js,script-update-interval=0
@@ -120,8 +117,19 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 # > 云闪付签到
 云闪付签到 = type=cron,cronexp=7 0 * * *,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,script-update-interval=0
 
-# > 天天挖矿小程序 @支付宝
-天天挖矿签到 = type=cron,cronexp=0 9 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js,script-update-interval=0
+# Sunert
+# > 京东到家 (@barrymchen, @GideonSenku & @Macsuny)
+# APP登陆账号后，点击主页’签到‘,即可
+京东到家 = type=cron,cronexp=25 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
+# > 微信小程序-来客有礼 (By @Macsuny)
+# 微信搜索’来客有礼‘小程序,登陆京东账号，点击’领京豆->翻牌‘
+来客有礼 = type=cron,cronexp=30 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
+
+# yangtingxiao (operation-api.jimistore.com)
+京东大赢家 = type=cron, cronexp=5 9-22 * * *, timeout=300,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_bigWinner.js,wake-system=1
+京东时光机 = type=cron, cronexp=19 0-20/4 * * *, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_timeMachine.js,wake-system=1
+京东白条券 = type=cron,cronexp=0 9 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js, tag=京东白条
+天天挖矿 = type=cron, cronexp=17 0 * * *, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js,wake-system=1
 
 [MITM]
 hostname = %APPEND% act.10010.com, m.client.10010.com, youhui.95516.com, mvp-sleeper.qutoutiao.net, cj-activity.1sapp.com, api.1sapp.com, work-for-coin.1sapp.com, qtt-turntable.qutoutiao.net, operation-api.jimistore.com
