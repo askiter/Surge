@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-10-30 14:25
+#!desc=其他脚本任务。最后更新时间：2020-10-31 13:12
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -129,7 +129,9 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 京东大赢家 = type=cron, cronexp=5 9-22 * * *, timeout=300,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_bigWinner.js,wake-system=1
 京东时光机 = type=cron, cronexp=19 0-20/4 * * *, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_timeMachine.js,wake-system=1
 京东白条券 = type=cron,cronexp=0 9 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js, tag=京东白条
-天天挖矿 = type=cron, cronexp=17 0 * * *, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js,wake-system=1
+# 天天挖矿 = type=cron, cronexp=17 0 * * *, script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js,wake-system=1
+
+天天挖矿小程序 = type=cron, cronexp=13 0 * * *, script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js,wake-system=1
 
 [MITM]
 hostname = %APPEND% act.10010.com, m.client.10010.com, youhui.95516.com, mvp-sleeper.qutoutiao.net, cj-activity.1sapp.com, api.1sapp.com, work-for-coin.1sapp.com, qtt-turntable.qutoutiao.net, operation-api.jimistore.com

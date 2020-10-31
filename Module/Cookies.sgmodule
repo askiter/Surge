@@ -1,5 +1,5 @@
 #!name=Askiter Cookies Module for iOS
-#!desc=iOS Cookie 模块配置，仅在需要的时候启用。最后更新时间：2020-10-30 14:18
+#!desc=iOS Cookie 模块配置，仅在需要的时候启用。最后更新时间：2020-10-31 13:12
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -236,7 +236,9 @@ http-request ^https:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/h5\/m\/recommendGetW
 http-request ^https://api.tuhu.cn/User/GetUserCurrentAndNextGradeInfo script-path=https://raw.githubusercontent.com/photonmang/quantumultX/master/tuhu/tuhu.Cookie.js, tag=途虎养车
 
 # yangtingxiao (operation-api.jimistore.com)
-http-request ^https:\/\/operation-api\.jimistore\.com\/* script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js, tag=天天挖矿
+# http-request ^https:\/\/operation-api\.jimistore\.com\/* script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js, tag=天天挖矿
+
+天天挖矿小程序 = type=http-request,pattern=^https:\/\/operation-api\.jimistore\.com\/*,requires-body=1,max-size=0,script-path=ttwbxcxSign.js
 
 # 云闪付
 http-request ^https://youhui.95516.com/newsign/public/app/index.html script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js, requires-body=true, timeout=10, tag=云闪付签到
