@@ -1,9 +1,9 @@
 #!name=Task 京东签到 by NobyDa
-#!desc=京东签到 定时任务配置。最后更新时间：2020-10-27 20:55
+#!desc=京东签到 定时任务配置。最后更新时间：2020-11-02 23:00
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
 # 打开浏览器访问: https://bean.m.jd.com
-京东签到1 = type=cron,cronexp=1 0 * * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+京东签到 = type=cron,cronexp=5 0 * * *,timeout=300,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
