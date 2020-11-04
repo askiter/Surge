@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-11-05 00:15
+#!desc=其他脚本任务。最后更新时间：2020-11-05 00:40
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -95,6 +95,7 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 海底捞 = type=cron,cronexp=25 3 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js,script-update-interval=0
 
 # > 万达电影
+# 进入签到页面获取，网页端:https://act-m.wandacinemas.com/2005/17621a8caacc4d190dadd/
 万达电影 = type=cron,cronexp=10 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js,wake-system=true
 
 # 人人视频
@@ -138,4 +139,4 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 天天挖矿小程序 = type=cron, cronexp=13 0 * * *, script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js,wake-system=1
 
 [MITM]
-hostname = %APPEND% act.10010.com, m.client.10010.com, youhui.95516.com, mvp-sleeper.qutoutiao.net, cj-activity.1sapp.com, api.1sapp.com, work-for-coin.1sapp.com, qtt-turntable.qutoutiao.net, operation-api.jimistore.com
+hostname = %APPEND% act.10010.com, m.client.10010.com, youhui.95516.com, mvp-sleeper.qutoutiao.net, cj-activity.1sapp.com, api.1sapp.com, work-for-coin.1sapp.com, qtt-turntable.qutoutiao.net, operation-api.jimistore.com, user-api-prd-mx.wandafilm.com
