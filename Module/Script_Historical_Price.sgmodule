@@ -1,0 +1,17 @@
+#!name=Script 历史价格 Module for iOS
+#!desc=京东淘宝历史比价配置。最后更新时间：2020-11-04 10:21
+#!system=ios
+
+# GitHub主页(https://github.com/askiter/Surge)
+
+[Script]
+# yichahucha
+京东比价 = type=http-response, pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig), requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,script-update-interval=0
+淘宝比价1(内置版) = type=http-request, pattern=^http://.+/amdc/mobileDispatch, requires-body=1, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js, script-update-interval=0
+淘宝比价2(内置版) = type=http-response, pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail, requires-body=1, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js, script-update-interval=0
+淘宝比价1 Lite(通知版) = type=http-request, pattern=^http://.+/amdc/mobileDispatch, requires-body=1, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, script-update-interval=0
+淘宝比价2 Lite(通知版) = type=http-response, pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail, requires-body=1, script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price_lite.js, script-update-interval=0
+
+
+[MITM]
+hostname = %APPEND% trade-acs.m.taobao.com, api.m.jd.com
