@@ -5,9 +5,6 @@
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
-# > 京东自动提交互助码 By whyour
-自动互助码 = type=cron,cronexp=0 10 * * 1, wake-system=1, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/shareCode-auto.js
-
 # > 京东农场 (By liuxiaoyucc、lxk0301 & iepngs)
 # 京东App - 右下角"我的"- 游戏与互动- 东东农场
 京东农场= type=cron,cronexp=8 0 * * *,wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_fruit.js
