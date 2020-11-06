@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-11-05 10:05
+#!desc=其他脚本任务。最后更新时间：2020-11-05 14:25
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -140,7 +140,8 @@ v2ex.js = type=cron,cronexp=30 1 0 * * *,script-path=https://raw.githubuserconte
 天天挖矿小程序 = type=cron, cronexp=13 0 * * *, script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js,wake-system=1
 
 # > 京东自动提交互助码 By whyour
-自动互助码 = type=cron,cronexp=0 10 * * 1, wake-system=1, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/shareCode-auto.js
+# 目前配置为每周五早上6点10分0秒运行
+自动互助码 = type=cron,cronexp=0 10 6 ? * 6, wake-system=1, script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/shareCode-auto.js
 
 [MITM]
 hostname = %APPEND% act.10010.com, m.client.10010.com, youhui.95516.com, mvp-sleeper.qutoutiao.net, cj-activity.1sapp.com, api.1sapp.com, work-for-coin.1sapp.com, qtt-turntable.qutoutiao.net, operation-api.jimistore.com, user-api-prd-mx.wandafilm.com
