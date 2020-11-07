@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-11-07 11:25
+#!desc=其他脚本任务。最后更新时间：2020-11-07 22:51
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -135,6 +135,9 @@ v2ex.js = type=cron,cronexp=0 0 * * *,script-path=https://raw.githubusercontent.
 京东大赢家 = type=cron, cronexp=5 9-22 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_bigWinner.js
 京东时光机 = type=cron, cronexp=19 0-20/4 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_timeMachine.js
 京东白条券 = type=cron,cronexp=0 9 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js
+京东抽奖机 = type=cron,cronexp=11 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+京东星店长 = type=cron,cronexp=5 9 * * *,wake-system=1,timeout=20,https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_starStore.js
+京东排行榜 = type=cron,cronexp=11 9 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
 # 天天挖矿 = type=cron, cronexp=17 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
 
 天天挖矿小程序 = type=cron, cronexp=15 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js
