@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-11-07 22:51
+#!desc=其他脚本任务。最后更新时间：2020-11-08 20:02
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -18,7 +18,7 @@
 什么值得买 = type=cron,cronexp=25 1 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,script-update-interval=0
 
 # > 吾爱破解
-吾爱破解 = type=cron,cronexp=17 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js,script-update-interval=0
+吾爱破解 = type=cron,cronexp=17 13 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js,script-update-interval=0
 
 # > 哔哩哔哩漫画
 哔哩哔哩漫画 = type=cron,cronexp=15 0 0 * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js,script-update-interval=0
@@ -33,11 +33,11 @@ AcFun = type=cron,cronexp=25 0 0 * * *,script-path=https://raw.githubusercontent
 
 # > 爱奇艺
 # 打开 APP
-爱奇艺 = type=cron,cronexp=5 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
+爱奇艺 = type=cron,cronexp=16 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
 
 # 芒果TV
 # 打开 APP 然后手动签到 1 次
-芒果TV = type=cron,cronexp=10 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js,script-update-interval=0
+芒果TV = type=cron,cronexp=12 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js,script-update-interval=0
 
 # 腾讯视频
 # 1.手机浏览器访问并登录: https://film.qq.com/
@@ -96,17 +96,17 @@ v2ex.js = type=cron,cronexp=0 0 * * *,script-path=https://raw.githubusercontent.
 
 # > 万达电影
 # 进入签到页面获取，网页端:https://act-m.wandacinemas.com/2005/17621a8caacc4d190dadd/
-万达电影 = type=cron,cronexp=10 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js
+万达电影 = type=cron,cronexp=14 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js
 
 # 人人视频
 # 打开 APP, 访问下`个人中心`
-人人视频 = type=cron,cronexp=15 1 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,script-update-interval=0
+人人视频 = type=cron,cronexp=15 12 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,script-update-interval=0
 
 # 趣头条
 # 打开 APP 进入签到:  `右上角` > `签到`
 # 阅读篇数获取Cookie:`小视频`中播放一段时间视频即可获取,具体的阅读篇数奖励请到应用内手动点击
 # 首页金币奖励:此Cookie在首页的推荐中随机出现,随机获取,并不一定会出现。
-趣头条 = type=cron,cronexp=20 4 * * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js,script-update-interval=0
+趣头条 = type=cron,cronexp=20 5 * * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js,script-update-interval=0
 
 # > 中青看点极速版 (By @Macsuny)
 # 1.进入app，签到一次,即可获取Cookie. 
@@ -122,14 +122,14 @@ v2ex.js = type=cron,cronexp=0 0 * * *,script-path=https://raw.githubusercontent.
 # Sunert
 # > 京东到家 (@barrymchen, @GideonSenku & @Macsuny)
 # APP登陆账号后，点击主页’签到‘,即可
-# 京东到家 = type=cron,cronexp=25 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
+# 京东到家 = type=cron,cronexp=25 15 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
 # > 微信小程序-来客有礼 (By @Macsuny)
 # 微信搜索’来客有礼‘小程序,登陆京东账号，点击’领京豆->翻牌‘
 # 来客有礼 = type=cron,cronexp=30 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
 # > 电视家
 # APP登陆账号后，点击菜单栏'领现金',即可获取Cookie，进入提现页面，点击随机金额，可获取提现地址!!
-电视家1 = type=cron,cronexp=0 8-20/2 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,script-update-interval=0
-电视家2 = type=cron,cronexp=0 7 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,script-update-interval=0
+电视家1 = type=cron,cronexp=0 8-20/2 0 * *,wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,script-update-interval=0
+电视家2 = type=cron,cronexp=0 7 0 * *,wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,script-update-interval=0
 
 # yangtingxiao (operation-api.jimistore.com)
 京东大赢家 = type=cron, cronexp=5 9-22 * * *,wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_bigWinner.js
