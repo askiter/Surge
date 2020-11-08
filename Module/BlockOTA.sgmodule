@@ -1,0 +1,15 @@
+#!name=BlockOTA By MrLiu
+#!desc=BlockOTA。最后更新时间：2020-11-08 18:30
+#!system=ios
+
+# GitHub主页(https://github.com/askiter/Surge)
+
+[Rule]
+DOMAIN,gdmf.apple.com,AdBlock
+DOMAIN,gdmf.apple.com.akadns.net,AdBlock
+DOMAIN,mesu.apple.com,AdBlock
+DOMAIN,mesu-cdn.apple.com.akadns.net,AdBlock
+DOMAIN,mesu-cdn.origin-apple.com.akadns.net,AdBlock
+DOMAIN,mesu.g.aaplimg.com,AdBlock
+DOMAIN,appldnld.apple.com,AdBlock
+DOMAIN,appldnld.apple.com.akadns.net,AdBlock
