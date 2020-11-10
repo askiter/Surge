@@ -1,8 +1,8 @@
 #!name=Task 京东全民开红包 by lxk0301
-#!desc=京东全民开红包 定时任务配置。最后更新时间：2020-11-03 11:44
+#!desc=京东全民开红包 定时任务配置。最后更新时间：2020-11-10 12:35
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
-京东全民开红包 = type=cron,cronexp=3 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_redPacket.js
+京东全民开红包 = type=cron,cronexp=3 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_redPacket.js

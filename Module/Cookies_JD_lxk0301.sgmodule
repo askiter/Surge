@@ -1,5 +1,5 @@
 #!name=Cookies 京东多帐号 by lxk0301
-#!desc=京东多帐号Cookies获取, 仅在需要的时候启用。最后更新时间：2020-11-06 13:15
+#!desc=京东多帐号Cookies获取, 仅在需要的时候启用。最后更新时间：2020-11-10 12:35
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -8,7 +8,7 @@
 # lxk0301  (wq.jd.com)
 # 使用方式：复制 https://home.m.jd.com/myJd/newhome.action 到浏览器打开 ，在个人中心自动获取 cookie，
 # 若弹出成功则正常使用。否则继续再此页面继续刷新一下试试
-京东多帐号Cookie = type=http-request,pattern=^https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/JD_extra_cookie.js,script-update-interval=0
+京东多帐号Cookie = type=http-request,pattern=^https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/JD_extra_cookie.js,script-update-interval=0
 
 [MITM]
 hostname = %APPEND% wq.jd.com

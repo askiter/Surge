@@ -1,5 +1,5 @@
 #!name=Task 京小超 by lxk0301
-#!desc=京小超 定时任务配置。最后更新时间：2020-10-27 20:55
+#!desc=京小超 定时任务配置。最后更新时间：2020-11-10 12:35
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -7,5 +7,5 @@
 [Script]
 # > 京小超(By lxk0301)
 # 京东App - 右下角"我的"- 游戏与互动-京小超
-京小超签到任务=type=cron,cronexp=11 1-23/5 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_superMarket.js
-京小超收取蓝币=type=cron,cronexp=0 0 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/scripts/master/jd_blueCoin.js
+京小超签到任务=type=cron,cronexp=11 * * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_superMarket.js
+京小超收取蓝币=type=cron,cronexp=0 0 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_blueCoin.js
