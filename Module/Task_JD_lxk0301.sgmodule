@@ -1,5 +1,5 @@
 #!name=Task 京东日常 by lxk0301
-#!desc=京东日常 任务定时配置。最后更新时间：2020-11-10 12:35
+#!desc=京东日常 任务定时配置。最后更新时间：2020-11-11 23:18
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -51,3 +51,6 @@
 
 # > 天天提鹅
 天天提鹅 = type=cron,cronexp=15 */3 * * *,https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_daily_egg.js,wake-system=1
+
+# > 京东金融养猪猪
+天天提鹅 = type=cron,cronexp=19 * * * *,https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pigPet.js,wake-system=1
