@@ -1,0 +1,13 @@
+#!name=Task 日常任务 by yangtingxiao
+#!desc=日常任务 By yangtingxiao。最后更新时间：2020-11-13 14:50
+#!system=ios
+
+# GitHub主页(https://github.com/askiter/Surge)
+
+[Script]
+# yangtingxiao (operation-api.jimistore.com)
+京东白条券 = type=cron,cronexp=0 9 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js
+京东抽奖机 = type=cron,cronexp=11 1 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js
+京东排行榜 = type=cron,cronexp=11 9 * * *,wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js
+天天挖矿 = type=cron, cronexp=17 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/ttwk/ttwk.js
+
