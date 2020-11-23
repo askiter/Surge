@@ -1,5 +1,5 @@
 #!name=Askiter Cookies Module for iOS
-#!desc=iOS Cookie 模块配置，仅在需要的时候启用。最后更新时间：2020-11-20 16:21
+#!desc=iOS Cookie 模块配置，仅在需要的时候启用。最后更新时间：2020-11-23 13:38
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -110,7 +110,6 @@ http-request ^https?://m?api\.weibo\.c(n|om)\/2\/(cardlist|page\/button|page) sc
 
 # ziye12  (www.baimaa.com,ph0001.hezyq.com,wq.02gk.com,we7.ivee.top,ph0001.hezyq.com)
 http-request ^https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubusercontent.com/ziye12/JavaScript/master/yydkziye.js, timeout=10, tag=音乐line打卡
-http-request ^https:\/\/ph0001\.hezyq\.com\/* script-path= https://raw.githubusercontent.com/ziye12/JavaScript/master/asdkziye.js, timeout=10, tag=爱尚打卡
 http-request ^https:\/\/wq\.02gk\.com\/* script-path=https://raw.githubusercontent.com/ziye12/JavaScript/master/tldkziye.js, timeout=10, tag=陀螺打卡
 http-request ^https:\/\/we7\.ivee\.top\/* script-path= https://raw.githubusercontent.com/ziye12/JavaScript/master/wyxdkziye.js, timeout=10, tag=玩游戏打卡
 http-request ^https:\/\/ph0001\.hezyq\.com\/* script-path= https://raw.githubusercontent.com/ziye12/JavaScript/master/zqdkziye.js, timeout=10, tag=早起打卡
