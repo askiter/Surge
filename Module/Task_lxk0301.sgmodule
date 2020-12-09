@@ -1,5 +1,5 @@
 #!name=Task by lxk0301
-#!desc=京东日常 任务定时配置。最后更新时间：2020-12-09 20:40
+#!desc=京东日常 任务定时配置。最后更新时间：2020-12-09 22:00
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -50,8 +50,6 @@
 
 # 活动时间：2020-12-7 到 2020-12-12, 直播红包雨非指定时间运行会提示活动火爆，建议不要运行，防止黑号
 直播红包雨 = type=cron,cronexp="1 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
-
-超级直播间红包雨 = type=cron,cronexp="30 20-23/1 * * *",wake-system=1,timeout=60,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain2.js
 
 京东点点券 = type=cron,cronexp="9 0,20 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_necklace.js
 
