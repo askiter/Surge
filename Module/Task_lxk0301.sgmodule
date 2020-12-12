@@ -1,5 +1,5 @@
 #!name=Task by lxk0301
-#!desc=京东日常 任务定时配置。最后更新时间：2020-12-11 18:14
+#!desc=京东日常 任务定时配置。最后更新时间：2020-12-12 17:23
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -108,6 +108,8 @@
 
 # 活动时间：2020-12-9 到 2020-12-13
 PUBG = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=300,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_pubg.js
+
+金融打卡领年终奖 = type=cron,cronexp="15 6 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jr_sign.js
 
 小米运动 = type=cron,cronexp="10 17 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
 小米运动获取Token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/backUp/xmSports.js
