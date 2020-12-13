@@ -1,5 +1,5 @@
 #!name=Askiter Script Module for iOS
-#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2020-12-10 10:27
+#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2020-12-13 18:07
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -49,9 +49,9 @@ http-response ^https:\/\/lysl2020.com/wp-json/wp/v2/posts/* requires-body=1,scri
 http-response ^https:\/\/www.i3zh.com/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js, tag=搜罗好货
 
 #  Co2333
-http-response ^https://mb3admin.com/admin/service/registration/validateDevice requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-vD.js, tag=embyUnlocked
-http-response ^https://mb3admin.com/admin/service/registration/validate requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-v.js, tag=embyUnlocked
-http-response ^https://mb3admin.com/admin/service/registration/getStatus requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-gS.js, tag=embyUnlocked
+#http-response ^https://mb3admin.com/admin/service/registration/validateDevice requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-vD.js, tag=embyUnlocked
+#http-response ^https://mb3admin.com/admin/service/registration/validate requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-v.js, tag=embyUnlocked
+#http-response ^https://mb3admin.com/admin/service/registration/getStatus requires-body=1,max-size=0,script-path=https://subweb.oss-cn-hongkong.aliyuncs.com/Script/emby-adr-gS.js, tag=embyUnlocked
 
 # ZhiYi-N
 http-response https:\/\/api2\.mubu\.com\/v3\/api\/user\/current_user script-path=https://raw.githubusercontent.com/ZhiYi-N/Loon/master/mb.js, requires-body=true, timeout=10, tag=幕布
