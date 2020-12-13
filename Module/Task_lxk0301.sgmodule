@@ -1,5 +1,5 @@
 #!name=Task by lxk0301
-#!desc=京东日常 任务定时配置。最后更新时间：2020-12-13 00:33
+#!desc=京东日常 任务定时配置。最后更新时间：2020-12-13 12:25
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -46,7 +46,7 @@
 京东直播 = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live.js
 
 # 活动时间：2020-12-7 到 2020-12-12, 直播红包雨非指定时间运行会提示活动火爆，建议不要运行，防止黑号
-直播红包雨 = type=cron,cronexp="1 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
+# 直播红包雨 = type=cron,cronexp="1 0,9,11,13,15,17,19,20,21,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_live_redrain.js
 
 东东工厂 = type=cron,cronexp="7 * * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_jdfactory.js
 
@@ -81,7 +81,6 @@
 
 
 # 金榜年终奖 = type=cron,cronexp="8 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_split.js
-金榜年终奖 = type=cron,cronexp="8 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/askiter/JDScripts/master/jd_split.js
 
 东东小窝 = type=cron,cronexp="9 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_small_home.js
 
@@ -102,7 +101,7 @@
 #京东代属 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_ds.js
 
 # 活动时间：2020-12-4 到 2020-12-11
-数码加购京豆 = type=cron,cronexp="7 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js
+# 数码加购京豆 = type=cron,cronexp="7 7 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_digital_floor.js
 
 苹果抽奖机 = type=cron,cronexp="9 0 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_apple_live.js
 
