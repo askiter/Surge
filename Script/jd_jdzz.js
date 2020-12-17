@@ -44,8 +44,8 @@ if ($.isNode()) {
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const inviteCodes = [
-  `Af2oIwPLQ@ADzxWn6uTyjAB`,
-  `AenYNxunFjw@ADzxWn6uTyjAB`,
+  `Af2oIwPLQ@ADzxWn6uTyjAB@AUWE5m_iQy2QBWTaq1H0ZlA`,
+  `AenYNxunFjw@ADzxWn6uTyjAB@AUWE5m_iQy2QBWTaq1H0ZlA`,
 ]
 !(async () => {
   $.tuanList = []
