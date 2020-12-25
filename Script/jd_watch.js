@@ -109,6 +109,7 @@ let doBody = [
   'adid=EBF2D927-93DD-430A-9068-F6B5EACD7FE5&area=1_2800_2848_0&body=%7B%22referPageId%22%3A%22discRecommend%22%2C%22itemId%22%3A%22239960846%7C11%22%2C%22bizType%22%3A1%2C%22taskId%22%3A%223%22%2C%22role%22%3A1%7D&build=167461&client=apple&clientVersion=9.3.1&d_brand=apple&d_model=iPhone13%2C4&eid=eidI157b812259s9FjGYw3yLSma32TfLgumvVxYxmjllT0jCwZMQaI52ZD5niWnhhHCxV1NIQMMhPPp37ghQPsbiKPvNYOQkPwA3AZGWc%2B\/9CMa0bGxY&isBackground=N&joycious=1356&lang=zh_CN&networkType=wifi&networklibtype=JDNetworkBaseAF&openudid=1cbf356527b5f68951e13dddbea4901d8468ed1d&osVersion=14.3&partner=apple&rfs=0000&scope=11&screen=1284%2A2778&sign=2310e4c90d7052b451f66decc9a9e77d&st=1608258230562&sv=100&uts=0f31TVRjBStAPY01a93wT8YAKfWqlM7Mfuc7V2kH9Od562t5raS958tUCZ0cWteG01uDt7luiw1L25QdJXaH1\/C\/U%2B41lkxREZQABR6A9hy770XXKbcrQsf%2BwjOKItUDbmoCd8JqLqfyxO8VjAfGzBS8md6V34DyBK4v69qYsvbkPZI6pfjjBbsKh\/TyvodUettzni8RcIiYsFco7m0ZoQ%3D%3D&uuid=hjudwgohxzVu96krv\/T6Hg%3D%3D&wifiBssid=2e655dabec29dba8ac32a092405dbde5',
 ]
 
+
 function preload(){
   const fs = require('fs');
   let raw = fs.readFileSync('watch.chlsj');
@@ -140,6 +141,7 @@ if ($.isNode()) {
   cookiesArr.reverse();
   cookiesArr.push(...[$.getdata('CookieJD2'), $.getdata('CookieJD')]);
   cookiesArr.reverse();
+  cookiesArr = cookiesArr.filter(item => item !== "" && item !== null && item !== undefined);
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
 !(async () => {
@@ -183,8 +185,6 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 
         if ($.isNode()) {
           await notify.sendNotify(`${$.name}cookie已失效 - ${$.UserName}`, `京东账号${$.index} ${$.UserName}\n请重新登录获取cookie`);
-        } else {
-          $.setdata('', `CookieJD${i ? i + 1 : "" }`);//cookie失效，故清空cookie。$.setdata('', `CookieJD${i ? i + 1 : "" }`);//cookie失效，故清空cookie。
         }
         continue
       }
