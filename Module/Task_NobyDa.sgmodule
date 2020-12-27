@@ -1,19 +1,19 @@
 #!name=Task by NobyDa
-#!desc=京东签到 定时任务配置。最后更新时间：2020-12-08 17:18
+#!desc=京东签到 定时任务配置。最后更新时间：2020-12-27 13:53
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
 # 打开浏览器访问: https://bean.m.jd.com
-京东签到 = type=cron,cronexp=5 0 * * *,timeout=300,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
+京东签到 = type=cron,cronexp="5 0 * * *",timeout=300,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
 # > 爱奇艺
 # 打开 APP
-爱奇艺 = type=cron,cronexp=16 0 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
+爱奇艺 = type=cron,cronexp="16 0 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
 
 # > 哔哩哔哩漫画
-哔哩哔哩漫画 = type=cron,cronexp=15 0 0 * *,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js,script-update-interval=0
+哔哩哔哩漫画 = type=cron,cronexp="15 0 0 * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js,script-update-interval=0
 
 # > 吾爱破解
-吾爱破解 = type=cron,cronexp=17 13 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js,script-update-interval=0
+吾爱破解 = type=cron,cronexp="17 13 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js,script-update-interval=0

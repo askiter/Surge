@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-12-20 16:45
+#!desc=其他脚本任务。最后更新时间：2020-12-27 13:53
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -8,42 +8,42 @@
 
 # > 京东成长分 (By @barrymchen)
 # 打开京东金融app，“信用”-》“小白成长分”
-#京东成长分 = type=cron,cronexp=10 5 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczf.js,script-update-interval=0
+#京东成长分 = type=cron,cronexp="10 5 0 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczf.js,script-update-interval=0
 
 # > 招行信用卡(公众号) (By @iNotification)
 # 招商银行信用卡微信公众号：”签到领积分”
-招行信用卡(公众号) = type=cron,cronexp=5 5 0 * * *,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/cmbchina.js,script-update-interval=0
+招行信用卡(公众号) = type=cron,cronexp="5 5 0 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/cmbchina.js,script-update-interval=0
 
 # > 微博超话 (By Evilbutcher & toulanboy)
 # 1.打开微博APP，"我的"， "超话社区"， "底部栏--我的"， "关注"， 弹出通知，提示获取已关注超话链接成功。
 # 2. 点进一个超话页面，手动签到一次。弹出通知，提示获取超话签到链接成功。 若之前所有已经签到，关注一个新超话进行签到。
-微博超话 = type=cron,cronexp=30 17 6,12 * * *,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/weibotalk.js,wake-system=true,timeout=600
+微博超话 = type=cron,cronexp="30 17 6,12 * * *",script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/weibotalk.js,wake-system=true,timeout=600
 
 # > 云闪付签到
 云闪付签到Cookies = type=http-request,pattern=^https://youhui.95516.com/newsign/public/app/index.html,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,requires-body=1
-云闪付签到 = type=cron,cronexp=3 0 * * *,wake-system=1,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,script-update-interval=0
+云闪付签到 = type=cron,cronexp="3 0 * * *",wake-system=1,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,script-update-interval=0
 
 # makexp
 cron "40 11 8 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/xmly_wc.js,tag=微信小程序-喜马拉雅
 
 # iisams 
-梨涡签到领现金 = type=cron,cronexp=7 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js
-京东特权值 = type=cron,cronexp=5 8 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js
+梨涡签到领现金 = type=cron,cronexp="7 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js
+京东特权值 = type=cron,cronexp="5 8 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js
 
 # dompling
-小米有品 = type=cron,cronexp=19 6 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/xiaomiyp/xiaomiyp.js
+小米有品 = type=cron,cronexp="19 6 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/xiaomiyp/xiaomiyp.js
 
 # whyour
 # 自动提交互助码, 目前配置为每周五早上6点10分0秒运行, 似乎设置为 0 10 6 ? * 6的时候是周六执行与预期不符
-自动提交互助码 = type=cron,cronexp=10 6,7 1,10,20 * *, wake-system=1, script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/shareCodeAuto.js
+自动提交互助码 = type=cron,cronexp="10 6,7 1,10,20 * *", wake-system=1, script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/shareCodeAuto.js
 
 # 微信小程序-赚京豆
-#京东赚赚 = type=cron,cronexp=0 9 * * *,timeout=60,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
+#京东赚赚 = type=cron,cronexp="0 9 * * *",timeout=60,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
 #京东赚赚cookie = type=http-request,pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
 
 # Created by Mrliu
 # 天天挖坑小程序
-天天挖矿小程序 = type=cron, cronexp=15 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js
+天天挖矿小程序 = type=cron, cronexp="15 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js
 天天挖矿小程序Cookie = type=http-request,pattern=^https:\/\/operation-api\.jimistore\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js
 
 [MITM]

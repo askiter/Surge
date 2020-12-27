@@ -1,5 +1,5 @@
 #!name=Task by Sunert
-#!desc=京东签到 定时任务配置。最后更新时间：2020-12-08 17:18
+#!desc=京东签到 定时任务配置。最后更新时间：2020-12-27 13:51
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -9,27 +9,27 @@
 # 1.打开腾讯新闻app，阅读几篇文章，倒计时结束后即可获取阅读Cookie;
 # 2.看一次推荐视频获取视频地址
 # 3.可能腾讯有某些限制，有些号码无法领取红包，手动阅读几篇，能领取红包，一般情况下都是正常的，
-# 腾讯新闻 = type=cron,cronexp=35 14 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
+# 腾讯新闻 = type=cron,cronexp="35 14 0 * * *",script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js,script-update-interval=0
 
 # > 微博 & 微博钱包 (By @Macsuny)
 #1.打开微博App获取Cookie.获取后请注释或禁用Cookie
 #2.打开微博钱包点击签到，获取Cookie，
 #3.钱包已经签到无法获取
-微博(钱包) = type=cron,cronexp=30 13 6,12 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,script-update-interval=0
+微博(钱包) = type=cron,cronexp="30 13 6,12 * * *",script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,script-update-interval=0
 
 # > 中青看点极速版 (By @Macsuny)
 # 1.进入app，签到一次,即可获取Cookie. 
 # 2.阅读一篇文章，获取阅读请求body，
 # 3.在阅读文章最下面有个惊喜红包，点击获取惊喜红包请求
 # 4.激励视频获取方法: 关闭vpn，进入任务中心=>抽奖赚点击下面第一个宝箱，出现视频广告页面，然后打开vpn，等待视频播放完毕，点击点我继续领青豆，再重复一次上面操作，获取激励视频请求的body
-中青看点极速版 = type=cron,cronexp=24 5 0 * * *,wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
+中青看点极速版 = type=cron,cronexp="24 5 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
 
 # > 京东到家 (@barrymchen, @GideonSenku & @Macsuny)
 # APP登陆账号后，点击主页’签到‘,即可
-京东到家 = type=cron,cronexp=25 15 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
+京东到家 = type=cron,cronexp="25 15 0 * * *",script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/jddj.js,script-update-interval=0
 # > 微信小程序-来客有礼 (By @Macsuny)
 # 微信搜索’来客有礼‘小程序,登陆京东账号，点击’领京豆->翻牌‘
-# 来客有礼 = type=cron,cronexp=30 5 0 * * *,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
+# 来客有礼 = type=cron,cronexp="30 5 0 * * *",script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,script-update-interval=0
 # > 电视家
 # APP登陆账号后，点击菜单栏'领现金',即可获取Cookie，进入提现页面，点击随机金额，可获取提现地址!!
-电视家 = type=cron,cronexp=0 7,8-20/2 0 * *,wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,script-update-interval=0
+电视家 = type=cron,cronexp="0 7,8-20/2 0 * *",wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js,script-update-interval=0
