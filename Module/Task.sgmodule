@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-12-27 16:11
+#!desc=其他脚本任务。最后更新时间：2020-12-27 22:46
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -17,7 +17,7 @@
 # > 微博超话 (By Evilbutcher & toulanboy)
 # 1.打开微博APP，"我的"， "超话社区"， "底部栏--我的"， "关注"， 弹出通知，提示获取已关注超话链接成功。
 # 2. 点进一个超话页面，手动签到一次。弹出通知，提示获取超话签到链接成功。 若之前所有已经签到，关注一个新超话进行签到。
-微博超话 = type=cron,cronexp="30 17 6,12 * * *",script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/weibotalk.js,wake-system=true,timeout=600
+#微博超话 = type=cron,cronexp="30 17 6,12 * * *",script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/weibotalk.js,wake-system=true,timeout=600
 
 # > 云闪付签到
 #云闪付签到Cookies = type=http-request,pattern=^https://youhui.95516.com/newsign/public/app/index.html,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,requires-body=1
