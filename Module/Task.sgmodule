@@ -1,5 +1,5 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-12-27 22:46
+#!desc=其他脚本任务。最后更新时间：2020-12-28 10:20
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -12,7 +12,7 @@
 
 # > 招行信用卡(公众号) (By @iNotification)
 # 招商银行信用卡微信公众号：”签到领积分”
-招行信用卡(公众号) = type=cron,cronexp="5 5 0 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/cmbchina.js,script-update-interval=0
+#招行信用卡(公众号) = type=cron,cronexp="5 5 0 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/cmbchina.js,script-update-interval=0
 
 # > 微博超话 (By Evilbutcher & toulanboy)
 # 1.打开微博APP，"我的"， "超话社区"， "底部栏--我的"， "关注"， 弹出通知，提示获取已关注超话链接成功。
@@ -22,9 +22,6 @@
 # > 云闪付签到
 #云闪付签到Cookies = type=http-request,pattern=^https://youhui.95516.com/newsign/public/app/index.html,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,requires-body=1
 #云闪付签到 = type=cron,cronexp="3 0 * * *",wake-system=1,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,script-update-interval=0
-
-# makexp
-cron "40 11 8 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/xmly_wc.js,tag=微信小程序-喜马拉雅
 
 # iisams 
 梨涡签到领现金 = type=cron,cronexp="7 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js
