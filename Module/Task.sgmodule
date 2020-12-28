@@ -1,47 +1,114 @@
 #!name=Askiter Task Module for iOS
-#!desc=其他脚本任务。最后更新时间：2020-12-28 10:20
+#!desc=其他脚本任务。最后更新时间：2020-12-28 15:40
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
+# > Created by NobyDa 
+# 打开浏览器访问: https://bean.m.jd.com
+#京东签到 = type=cron,cronexp="5 0 * * *",timeout=300,wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 
-# > 京东成长分 (By @barrymchen)
-# 打开京东金融app，“信用”-》“小白成长分”
-#京东成长分 = type=cron,cronexp="10 5 0 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/jdczf.js,script-update-interval=0
+# 爱奇艺 - 打开APP
+爱奇艺 = type=cron,cronexp="16 0 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js,script-update-interval=0
 
-# > 招行信用卡(公众号) (By @iNotification)
-# 招商银行信用卡微信公众号：”签到领积分”
-#招行信用卡(公众号) = type=cron,cronexp="5 5 0 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Task/cmbchina.js,script-update-interval=0
+# 哔哩哔哩漫画
+哔哩哔哩漫画 = type=cron,cronexp="15 0 0 * *",script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Bilibili-DailyBonus/Manga.js,script-update-interval=0
 
-# > 微博超话 (By Evilbutcher & toulanboy)
-# 1.打开微博APP，"我的"， "超话社区"， "底部栏--我的"， "关注"， 弹出通知，提示获取已关注超话链接成功。
-# 2. 点进一个超话页面，手动签到一次。弹出通知，提示获取超话签到链接成功。 若之前所有已经签到，关注一个新超话进行签到。
-#微博超话 = type=cron,cronexp="30 17 6,12 * * *",script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/weibotalk.js,wake-system=true,timeout=600
+# 吾爱破解
+吾爱破解 = type=cron,cronexp="17 13 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js,script-update-interval=0
 
-# > 云闪付签到
+
+# > Created by chavyleung
+# V2EX, 浏览器打开https://www.v2ex.com/mission/daily ，待弹出获取成功即可
+V2EX.js = type=cron,cronexp="0 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/v2ex/v2ex.js,script-update-interval=0
+
+# 中国联通， 1、打开 APP , 进入签到页面, 系统提示: `获取刷新链接: 成功`,然后手动签到 1 次 ; 2、首页>天天抽奖, 系统提示 `2` 次: `获·取Cookie: 成功 (登录抽奖)` 和 `获取Cookie: 成功 (抽奖次数)`
+中国联通 = type=cron,cronexp="20 2 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js,script-update-interval=0
+
+# 顺丰速运， 打开 APP, 访问下`我的顺丰` > `去签到` (访问下`去签到`的页面即可, 不用点`签到`) or 打开 APP或小程序, 访问下`27周年庆`
+顺丰速运 = type=cron,cronexp="20 1 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.js,script-update-interval=0
+
+# 海底捞, 打开APP 然后手动签到 1 次
+海底捞 = type=cron,cronexp="25 3 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/haidilao/hdl.js,script-update-interval=0
+
+# 万达电影, 进入签到页面获取，网页端:https://act-m.wandacinemas.com/2005/17621a8caacc4d190dadd/
+万达电影 = type=cron,cronexp="14 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wanda/wanda.js
+
+# 什么值得买, 浏览器访问并登录: https://zhiyou.smzdm.com/user/login
+什么值得买 = type=cron,cronexp="25 1 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,script-update-interval=0
+
+# 美团, 打开 APP , 然后手动签到 1 次, (`首页` > `红包签到`)
+美团 = type=cron,cronexp="40 2 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0
+
+# 美团外卖 ,打开 APP , 进入签到页面, 系统提示: `获取刷新链接: 成功`,然后手动签到 1 次
+美团外卖 = type=cron,cronexp="35 2 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wmmeituan/wmmeituan.js,script-update-interval=0
+
+# AcFun, 打开 APP, 访问下`我的`
+AcFun = type=cron,cronexp="25 0 0 * * *",script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/acfun/acfun.js,script-update-interval=0
+
+# 哔哩哔哩, 打开浏览器访问: https://www.bilibili.com 或 https://live.bilibili.com
+哔哩哔哩 = type=cron,cronexp="35 0 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-update-interval=0
+
+# 芒果TV, 打开 APP 然后手动签到 1 次
+芒果TV = type=cron,cronexp="12 0 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js,script-update-interval=0
+
+# 腾讯视频, 手机浏览器访问并登录: https://film.qq.com/
+腾讯视频 = type=cron,cronexp="35 1 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0
+
+# 人人视频, 打开 APP, 访问下`个人中心`
+人人视频 = type=cron,cronexp="15 12 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,script-update-interval=0
+
+# 喜马拉雅, 打开 APP, 访问下右下角`账号`
+喜马拉雅 = type=cron,cronexp="20 0,7 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,script-update-interval=0
+
+
+# > Created by passerby-b 
+# 云闪付签到
 #云闪付签到Cookies = type=http-request,pattern=^https://youhui.95516.com/newsign/public/app/index.html,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,requires-body=1
 #云闪付签到 = type=cron,cronexp="3 0 * * *",wake-system=1,script-path=https://gitee.com/passerby-b/javascript/raw/master/unipay.js,script-update-interval=0
 
-# iisams 
+
+# > Created by iisams 
 梨涡签到领现金 = type=cron,cronexp="7 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/7days.js
 京东特权值 = type=cron,cronexp="5 8 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/iisams/Scripts/master/liwo/jdtqz.js
 
-# dompling
+
+# > Created by dompling
 小米有品 = type=cron,cronexp="19 6 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/dompling/Script/master/xiaomiyp/xiaomiyp.js
 
-# whyour
-# 自动提交互助码, 目前配置为每周五早上6点10分0秒运行, 似乎设置为 0 10 6 ? * 6的时候是周六执行与预期不符
-自动提交互助码 = type=cron,cronexp="10 6,7 1,10,20 * *", wake-system=1, script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/shareCodeAuto.js
 
+# > Created by whyour
 # 微信小程序-赚京豆
 #京东赚赚 = type=cron,cronexp="0 9 * * *",timeout=60,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.js
 #京东赚赚cookie = type=http-request,pattern=^https\:\/\/api\.m\.jd\.com\/client\.action\?functionId\=interactIndex,requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/whyour/hundun/master/quanx/jdzz.cookie.js
 
-# Created by Mrliu
-# 天天挖坑小程序
+
+# > Created by yangtingxiao (operation-api.jimistore.com)
+京东白条券 = type=cron,cronexp="0 9 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_baiTiao.js
+
+
+# > Created by Sunert
+# > 微博 & 微博钱包
+# 1.打开微博App获取Cookie.获取后请注释或禁用Cookie; 
+# 2.打开微博钱包点击签到，获取Cookie, 注意, 如果钱包已经签到, 则无法获取
+微博(钱包) = type=cron,cronexp="30 13 6,12 * * *",script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js,script-update-interval=0
+
+# > 中青看点极速版
+# 1.进入app，签到一次,即可获取Cookie. 
+# 2.阅读一篇文章，获取阅读请求body，
+# 3.在阅读文章最下面有个惊喜红包，点击获取惊喜红包请求
+# 4.激励视频获取方法: 关闭vpn，进入任务中心=>抽奖赚点击下面第一个宝箱，出现视频广告页面，然后打开vpn，等待视频播放完毕，点击点我继续领青豆，再重复一次上面操作，获取激励视频请求的body
+中青看点极速版 = type=cron,cronexp="24 5 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/youth.js,script-update-interval=0
+
+
+# > Created by Mrliu
+# 天天挖矿小程序
 天天挖矿小程序 = type=cron, cronexp="15 0 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js
 天天挖矿小程序Cookie = type=http-request,pattern=^https:\/\/operation-api\.jimistore\.com\/*,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/ttwkxcx.js
+
+# 自动提交互助码
+自动提交互助码 = type=cron,cronexp="10 6,7 1,10,20 * *", wake-system=1, script-path=https://raw.githubusercontent.com/askiter/Surge/master/Script/shareCodeAuto.js
 
 [MITM]
 hostname = %APPEND% act.10010.com, m.client.10010.com, youhui.95516.com, mvp-sleeper.qutoutiao.net, cj-activity.1sapp.com, api.1sapp.com, work-for-coin.1sapp.com, qtt-turntable.qutoutiao.net, operation-api.jimistore.com, user-api-prd-mx.wandafilm.com

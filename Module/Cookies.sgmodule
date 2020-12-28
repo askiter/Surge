@@ -22,14 +22,12 @@ http-request ^https:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\
 http-request ^https:\/\/sf-integral-sign-in.weixinjia.net\/app\/index script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js, tag=顺丰速运
 http-request ^https:\/\/mcs-mimp-web.sf-express.com\/mcs-mimp\/share\/(.*?)Redirect script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/sfexpress/sfexpress.cookie.js, tag=顺丰速运
 http-request ^https:\/\/wapside.189.cn:9001\/api\/home\/homeInfo script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js, requires-body=true, tag=中国电信
-http-request ^https:\/\/api\.dongqiudi\.com\/v2\/user\/is_login script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/dongqiudi/dongqiudi.cookie.js, tag=懂球帝
 http-request ^https:\/\/m\.you\.163\.com\/xhr\/points\/index\.json script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/yanxuan/yanxuan.cookie.js, tag=网易严选
 http-request ^https:\/\/apk\.tw\/?.? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/apktw/apktw.cookie.js, tag=APK.TW
 http-request ^https:\/\/user.qunar.com\/webapi\/member\/signIndexV2.htm script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qunar/qunar.cookie.js, tag=去哪儿
 http-request ^https:\/\/passport.csdn.net\/v2\/api\/app\/login\/checkAndRefreshToken script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js, tag=CSDN
 http-request ^https:\/\/gw.csdn.net\/mini-app\/v2\/lucky_draw\/login\/sign_in\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/csdn/csdn.cookie.js, tag=CSDN
 http-request ^https:\/\/credits.bz.mgtv.com\/user\/creditsTake script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.cookie.js, tag=芒果tv
-http-request ^https:\/\/m.gdoil.cn\/webapi\/usersign\/addusersign script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/gdoil/gdoil.cookie.js, tag=加油广东 
 http-request ^https:\/\/www.maomicd.com\/plugin.php\?id=k_misign:sign&operation=qiandao script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/maomicd/maomicd.cookie.js, tag=猫咪音乐
 http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/index\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js, requires-body=true, tag=10086
 http-request ^http:\/\/wx.10086.cn\/website\/taskCenter\/sign\? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.cookie.js, requires-body=true, tag=10086
@@ -43,7 +41,6 @@ http-request ^https:\/\/i.meituan.com\/evolve\/signin\/signpost\/ script-path=ht
 http-request ^https:\/\/api.everphoto.cn\/users\/self\/checkin\/v2 script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/everphoto/everphoto.cookie.js, tag=时光相册
 http-request ^https://group\.baicizhan\.com/group/rewards? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bcz/bcz.cookie.js, tag=百词斩
 http-request ^https:\/\/maicai.api.ddxq.mobi\/point\/home script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/mcdd/mcdd.cookie.js, tag=叮咚买菜
-http-request ^https://pm\.m\.fenqile\.com/route0014/star/sign/sign.json script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/fenqile/fenqile.cookie.js, requires-body=true, tag=分期乐
 http-request ^https:\/\/pm\.m\.fenqile\.com/route0014\/app\/tab\/privilege\/convertTaskReward.json script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/fenqile/fenqile.cookie.js, requires-body=true,  tag=分期乐
 http-request ^https://api\.dushu\.io/CheckIn script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/fandeng/fandeng.cookie.js, requires-body=true, tag=樊登读书
 http-request ^https://node\.kg\.qq\.com/webapp/proxy? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qmkg/qmkg.cookie.js, requires-body=true, tag=全民K歌
