@@ -3,7 +3,7 @@
  * @Github: https://github.com/askiter
  * @Date: 2020-12-20 20:40:00
  * @LastEditors: whyour
- * @LastEditTime: 2020-12-25 10:42:00
+ * @LastEditTime: 2021-01-12 17:04:00
  */
 /*
 const $ = new Env("互助码");
@@ -33,7 +33,8 @@ const shareCodes = [
         ddgc: "P04z54XCjVWnYaS5kRLUzm8iD4",
         jxgc: "NKLy_UyXMMKOzNIIuMr1Hw==",
         jdzz: "AenYNxunFjw",
-		joy: "OF67hD7lWQ0=",
+        joy: "OF67hD7lWQ0=",
+        cash: "UlhsNajnJA",
     },
     {
         zd: "d7xlbcknxsixyuwcs5whsnibx4",
@@ -42,7 +43,8 @@ const shareCodes = [
         ddgc: "P04z54XCjVWnYaS5kFXVj-nnQ",
         jxgc: "",
         jdzz: "Af2oIwPLQ",
-		joy: "J_n4Q6ETBno=",
+        joy: "J_n4Q6ETBno=",
+        cash: "V0RpM7Py",
     },
 ];
 $.result = [];
@@ -51,7 +53,7 @@ $.random = Math.floor(Math.random() * 60);
 !(async () => {
     console.log(`\n此脚本延迟${$.random}秒执行\n`);
     for (let i = 0; i < shareCodes.length; i++) {
-        const { zd, nc, mc, ddgc, jxgc, jdzz, joy } = shareCodes[i];
+        const { zd, nc, mc, ddgc, jxgc, jdzz, joy, cash } = shareCodes[i];
         await $.wait($.random);
         zd &&
         (await create(
@@ -93,6 +95,12 @@ $.random = Math.floor(Math.random() * 60);
         (await create(
             `https://code.chiang.fun/api/v1/jd/jdcrazyjoy/create/${joy}/`,
             "CrazyJoy"
+        ));
+        await $.wait($.random);
+        cash &&
+        (await create(
+            `https://code.chiang.fun/api/v1/jd/jdcash/create/${joy}/`,
+            "领现金"
         ));
     }
     await showMsg();
