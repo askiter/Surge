@@ -1,5 +1,5 @@
 #!name=Askiter Script Module for iOS
-#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2021-04-19 08:12
+#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2021-06-03 14:07
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -41,7 +41,6 @@ http-response ^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status requires
 #http-response ^https?:\/\/subscription-service\.neuralprisma\.com\/subscription_get requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/lensa.js,tag=Lensa
 #http-response https://mappsv5.caixin.com/articlev5/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caixin.js,tag=财新
 #http-response https://diary.7english.cn:2433//api/user/userInfo requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/moo.js,tag=moo日记
-#http-response ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/receipt.js,tag=RCam
 #http-response https://bbb.ddly666.top/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js,tag=酸鸡汤
 #http-response ^https:\/\/hkj178.com/wp-json/mp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js,tag=黑科技软件
 #http-response ^https:\/\/a.jxjt888.top/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js,tag=天泽后花园
@@ -51,7 +50,6 @@ http-response ^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status requires
 #  Co2333
 
 # ZhiYi-N
-http-response https:\/\/api2\.mubu\.com\/v3\/api\/user\/current_user script-path=https://raw.githubusercontent.com/ZhiYi-N/Loon/master/mb.js, requires-body=true, timeout=10, tag=幕布
 http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/ZhiYi-N/Loon/master/picsew.js, requires-body=true, timeout=10, tag=piesew
 
 # Wangsc1
