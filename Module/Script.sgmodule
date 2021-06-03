@@ -39,18 +39,12 @@ http-response https?:\/\/api\.jiaonizuocai\.com requires-body=1,script-path=http
 http-response ^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/ddqd.js,tag=滴答
 #http-response ^https:\/\/claritywallpaper\.com\/clarity\/api\/(userInfo|special\/queryByCatalogAll) requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/clarity.js,tag=克拉
 #http-response ^https?:\/\/subscription-service\.neuralprisma\.com\/subscription_get requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/lensa.js,tag=Lensa
-#http-response https://mappsv5.caixin.com/articlev5/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/caixin.js,tag=财新
 #http-response https://diary.7english.cn:2433//api/user/userInfo requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/moo.js,tag=moo日记
 #http-response https://bbb.ddly666.top/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js,tag=酸鸡汤
 #http-response ^https:\/\/hkj178.com/wp-json/mp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js,tag=黑科技软件
 #http-response ^https:\/\/a.jxjt888.top/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js,tag=天泽后花园
 #http-response ^https:\/\/lysl2020.com/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js, tag=小野分享
 #http-response ^https:\/\/www.i3zh.com/wp-json/wp/v2/posts/* requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/xcx.js, tag=搜罗好货
-
-#  Co2333
-
-# ZhiYi-N
-http-response https:\/\/buy\.itunes\.apple\.com\/verifyReceipt script-path=https://raw.githubusercontent.com/ZhiYi-N/Loon/master/picsew.js, requires-body=true, timeout=10, tag=piesew
 
 # Wangsc1
 http-response ^https?://m.client.10010.com/uniAdmsInterface/getHomePageAd script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/china_unicom.js, tag=联通轮播去广告
