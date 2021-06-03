@@ -1,11 +1,14 @@
 #!name=Askiter Script Module for iOS
-#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2021-06-03 14:07
+#!desc=脚本合集，需要配置 CA 证书并启用 MitM 开关。最后更新时间：2021-06-03 14:16
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 # https://raw.githubusercontent.com/nzw9314/Surge/master/Module/Script_All_in_one.sgmodule
 
 [Script]
+# > Speed up download app ios
+dnspod = script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Surge/dnspod.js,script-update-interval=0,type=dns
+
 # chavy
 http-response ^https://tncj.hortorgames.com/chicken/fight/(answer|findQuiz) requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tncj/tncj.min.js, tag=头脑吃鸡
 
