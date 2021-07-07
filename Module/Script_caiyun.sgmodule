@@ -1,12 +1,13 @@
 #!name=Script 彩云天气
-#!desc=最后更新时间：2021-06-03 14:44
+#!desc=最后更新时间：2021-07-07 10:26
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
 
 [Script]
-#获取经纬度 = type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
-获取经纬度 = type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com\/v1\/weather, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+获取经纬度 = type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+#获取经纬度 =  type=http-request, pattern=https:\/\/((weather-data\.apple)|(api.weather))\.com\/v1\/weather, script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false
+
 彩云天气 = type=cron,cronexp=0 6-22/2 * * *,wake-system=1,timeout=30,script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js
 
 [MITM]
