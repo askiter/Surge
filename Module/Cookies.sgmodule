@@ -1,5 +1,5 @@
 #!name=Askiter Cookies Module for iOS
-#!desc=iOS Cookie 模块配置，仅在需要的时候启用。最后更新时间：2021-07-07 10:18
+#!desc=iOS Cookie 模块配置，仅在需要的时候启用。最后更新时间：2021-07-07 10:33
 #!system=ios
 
 # GitHub主页(https://github.com/askiter/Surge)
@@ -87,9 +87,6 @@ http-request ^http:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/sign\/signin script-p
 http-request ^http:\/\/api\.gaoqingdianshi\.com\/api\/v2\/cash\/withdrawal script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/dianshijia.js, tag=电视家
 http-request ^https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js, tag=微信小程序 来客有礼
 http-request ^https?:\/\/e\.189\.cn\/store\/user\/package_detail\.do script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/telecomInfinity.js, tag=中国电信套餐
-http-request ^https:\/\/api\.weibo\.cn\/\d\/video\/machine\?gsid script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, tag=微博
-http-request ^https:\/\/pay\.sc\.weibo\.com\/aj\/mobile\/home\/welfare\/signin\/do\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, tag=微博
-http-request ^https:\/\/api\.inews\.qq\.com\/event\/v1\/user\/event\/report\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/txnews.js, requires-body=true, tag=腾讯新闻
 
 # Evilbutcher (h5.youzan.com,h5.youzan.com,glados.rocks,api.weibo.cn)
 http-request ^https:\/\/h5\.youzan\.com\/wscump\/checkin\/checkin, script-path=https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/funboat/funboat.js, tag=Funboat获取签到Cookie
